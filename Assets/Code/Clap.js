@@ -29,7 +29,7 @@ function Update () {
         fly.SendMessage("TryToSquash");
       }
       
-      audio.Play();
+      GetComponent.<AudioSource>().Play();
       
       leftHand.position.x = -normalHandDistance;
       rightHand.position.x = normalHandDistance;

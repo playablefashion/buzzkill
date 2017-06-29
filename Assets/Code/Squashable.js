@@ -20,9 +20,9 @@ function TryToSquash () {
 }
 
 function Squash() {
-  audio.Play();
+  GetComponent.<AudioSource>().Play();
   GameObject.Find("/text/score").SendMessage("Increment");
-  renderer.sprite = squashedImage;
+  GetComponent.<Renderer>().sprite = squashedImage;
   gameObject.tag = "Untagged";
   Destroy(this);  
 }
